@@ -20,7 +20,7 @@ import {
   MIN_SIDEBAR_WIDTH,
   NARROW_SIDEBAR_WIDTH,
   Path,
-  REPO_URL,
+  FAST_CARD_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -119,9 +119,9 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+        <div className={styles["sidebar-title"]}>ChatGpt-AI神奇女侠</div>
         <div className={styles["sidebar-sub-title"]}>
-          Build your own AI assistant.
+          致力于让所有人轻松体验AI的乐趣
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -174,8 +174,8 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
-              <IconButton icon={<GithubIcon />} shadow />
+            <a href={FAST_CARD_URL} target="_blank">
+              <IconButton icon={<ChatGptIcon />} shadow />
             </a>
           </div>
         </div>
